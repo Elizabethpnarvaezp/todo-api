@@ -1,4 +1,4 @@
-# 🛠 Todo API (Backend)
+# Todo API (Backend)
 
 API REST para la gestión de tareas (To-Do App) usando **Node.js**, **Express** y **MongoDB**.
 

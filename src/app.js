@@ -7,7 +7,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://todo-web-ten-alpha.vercel.app/"],
+    origin: ["http://localhost:5173", "https://todo-web-ten-alpha.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );

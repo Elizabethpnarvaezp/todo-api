@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+// Define el esquema de Task
 const TaskSchema = new mongoose.Schema({
   title: { type: String, required: true, trim: true },
   description: { type: String, default: "" },

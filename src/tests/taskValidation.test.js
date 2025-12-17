@@ -3,14 +3,17 @@ const request = require("supertest");
 const app = require("../app");
 const Task = require("../models/task.model");
 
+// Configuración de la base de datos para pruebas
 beforeAll(async () => {
   await mongoose.connect("mongodb://localhost:27017/todo_app");
 });
 
+// Limpia las tareas antes de cada test
 beforeEach(async () => {
   await Task.deleteMany({});
 });
 
+// Cierra la conexión al finalizar
 afterAll(async () => {
   await mongoose.connection.close();
 });
